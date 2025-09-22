@@ -358,7 +358,7 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ### 🌐 Live Website
 - **Live Demo**: https://maryfevlom-collab.github.io/portfolio-website
-- **Repository**: https://github.com/maryfevlom-collab/portfolio-website
+- **Repository**:https://github.com/maryfevlom-collab/wk8-portfolio-website 
 - **Completion Date**: September, 2025
 
 ### ✅ Assignment Requirements Completed
