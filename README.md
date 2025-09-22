@@ -328,9 +328,9 @@ portfolio-website/
 
 ## 📞 Contact & Support
 
-- **Email**: maryfevlom@email.com
+- **Email**: maryfevlom@gmail.com
 - **GitHub**: [@maryfevlom-collab](https://github.com/maryfevlom-collab)
-- **LinkedIn**: [Your LinkedIn Profile]
+- **LinkedIn**: https://www.linkedin.com/in/mawunyo-mary-fevlo?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
 
 ## 📄 License
 
@@ -353,5 +353,29 @@ This project is open source and available under the [MIT License](LICENSE).
 - **Week 5**: Testing, optimization, and deployment
 
 ---
+
+## Student Submission - Mary Fevlom
+
+### 🌐 Live Website
+- **Live Demo**: https://maryfevlom-collab.github.io/portfolio-website
+- **Repository**: https://github.com/maryfevlom-collab/portfolio-website
+- **Completion Date**: September, 2025
+
+### ✅ Assignment Requirements Completed
+- [x] Multipage website (Home, About, Contact, Portfolio)
+- [x] Responsive design for all devices
+- [x] HTML5 semantic structure
+- [x] CSS3 styling and animations
+- [x] JavaScript interactivity (form validation, slider)
+- [x] Successfully deployed on GitHub Pages
+
+### 🛠 Technologies Implemented
+- HTML5, CSS3, JavaScript
+- Mobile-first responsive design
+- Form validation and error handling
+- Image slider with navigation
+- Interactive animations and transitions
+
+ ---
 
 **Built with ❤️ by Mary Fevlom** | **PLP Academy Week 8 Assignment** | **2025**
