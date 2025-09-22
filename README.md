@@ -95,7 +95,7 @@ A modern, responsive multipage portfolio website showcasing web development skil
 
 ## 🌐 Live Demo
 
-- **GitHub Pages**: [Your Live URL Here](https://maryfevlom-collab.github.io/portfolio-website)
+- **GitHub Pages**: [Your Live URL Here] (https://maryfevlom-collab.github.io/wk8-portfolio-website/)
 - **Repository**: [GitHub Repo](https://github.com/maryfevlom-collab/portfolio-website)
 
 ## 📋 Project Overview
