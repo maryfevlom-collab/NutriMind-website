@@ -1,9 +1,0 @@
-﻿{
-  "name": "portfolio-website",
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "build": "mkdir -p dist && cp *.html *.css *.js dist/ 2>/dev/null || true",
-    "dev": "npx serve ."
-  }
-}
