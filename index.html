@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriMind - AI-Powered Nutrition for All</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                NutriMind
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div id="home" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>NutriMind</h1>
+                <p>AI-Powered Nutrition Solutions for Zero Hunger and Poverty Alleviation</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary" data-page="about">Learn More</a>
+                    <a href="#" class="btn btn-secondary" data-page="contact">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Our Solutions</h2>
+                <div class="features-grid">
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI-Powered Budgeting</h3>
+                        <p>Smart budgeting app for poverty alleviation using machine learning to optimize nutrition spending.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Crowdfunding Platform</h3>
+                        <p>Connect communities in need with donors through our transparent crowdfunding platform for poverty relief.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <h3>Microcredit Platform</h3>
+                        <p>Empower small businesses with accessible microcredit solutions for sustainable income generation.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Geospatial Analysis</h3>
+                        <p>Advanced mapping tools to identify poverty-stricken areas and optimize resource distribution.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3>Mobile Platform</h3>
+                        <p>User-friendly mobile app for food donation matching and efficient food distribution networks.</p>
+                    </div>
+                    <div class="feature-card fade-in-up">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>AI Nutrition System</h3>
+                        <p>Intelligent nutrition recommendation system providing personalized dietary guidance for optimal health.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Slider -->
+        <section class="container">
+            <h2 class="section-title">Our Impact</h2>
+            <div class="slider" id="imageSlider">
+                <div class="slides active">
+                    <div class="slide-bg" style="background: linear-gradient(45deg, #ff6b35, #4caf50, #2196f3); height: 400px;"></div>
+                    <div class="slide-content">
+                        <h3>AI-Powered Nutrition Technology</h3>
+                        <p>Revolutionary AI systems analyzing nutritional needs and providing personalized recommendations for communities worldwide.</p>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="slide-bg" style="background: linear-gradient(45deg, #e91e63, #ff9800, #4caf50); height: 400px;"></div>
+                    <div class="slide-content">
+                        <h3>Community Support Networks</h3>
+                        <p>Building strong communities through crowdfunding platforms and microcredit systems that empower local entrepreneurs.</p>
+                    </div>
+                </div>
+                <div class="slides">
+                    <div class="slide-bg" style="background: linear-gradient(45deg, #3f51b5, #9c27b0, #4caf50); height: 400px;"></div>
+                    <div class="slide-content">
+                        <h3>Global Impact & Reach</h3>
+                        <p>Reaching communities worldwide with data-driven solutions that address hunger and poverty at scale.</p>
+                    </div>
+                </div>
+                <button class="slider-nav prev" onclick="changeSlide(-1)">&#8249;</button>
+                <button class="slider-nav next" onclick="changeSlide(1)">&#8250;</button>
+                <div class="slider-dots">
+                    <span class="dot active" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <h3 id="stat1">0</h3>
+                        <p>Communities Served</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="stat2">0</h3>
+                        <p>Meals Optimized</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="stat3">0</h3>
+                        <p>Families Helped</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3 id="stat4">0</h3>
+                        <p>Success Rate</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SDG Section -->
+        <section class="sdg-section">
+            <div class="container">
+                <h2 class="section-title">Supporting UN Sustainable Development Goals</h2>
+                <div class="sdg-grid">
+                    <div class="sdg-card fade-in-up">
+                        <div class="sdg-number">1</div>
+                        <h3>SDG 1: No Poverty</h3>
+                        <p>Microcredit platforms and smart budgeting tools to empower communities economically.</p>
+                    </div>
+                    <div class="sdg-card fade-in-up">
+                        <div class="sdg-number">2</div>
+                        <h3>SDG 2: Zero Hunger</h3>
+                        <p>AI-powered nutrition recommendations and food distribution optimization systems.</p>
+                    </div>
+                    <div class="sdg-card fade-in-up">
+                        <div class="sdg-number">AI</div>
+                        <h3>AI Technology</h3>
+                        <p>Machine learning algorithms driving innovative solutions for global challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- About Page -->
+    <div id="about" class="page">
+        <section class="about-hero">
+            <div class="container">
+                <h1 class="fade-in-up">About NutriMind</h1>
+                <p class="fade-in-up">Leveraging artificial intelligence to combat hunger and poverty through innovative nutrition solutions</p>
+            </div>
+        </section>
+
+        <section class="mission-vision">
+            <div class="container">
+                <div class="mv-grid">
+                    <div class="mv-card fade-in-up">
+                        <div class="card-header">
+                            <i class="fas fa-bullseye"></i>
+                            <h2>Our Mission</h2>
+                        </div>
+                        <p>To eliminate hunger and poverty by providing AI-powered nutrition solutions that are accessible, affordable, and sustainable for communities worldwide.</p>
+                        <ul>
+                            <li>Provide personalized nutrition recommendations</li>
+                            <li>Enable smart budgeting for optimal nutrition</li>
+                            <li>Connect communities with resources</li>
+                            <li>Support sustainable development goals</li>
+                        </ul>
+                    </div>
+                    <div class="mv-card fade-in-up">
+                        <div class="card-header">
+                            <i class="fas fa-eye"></i>
+                            <h2>Our Vision</h2>
+                        </div>
+                        <p>A world where no one goes hungry, where poverty doesn't determine access to nutrition, and where AI technology serves as a force for social good.</p>
+                        <ul>
+                            <li>Zero hunger by 2030 (SDG 2)</li>
+                            <li>No poverty (SDG 1)</li>
+                            <li>Technology-driven social impact</li>
+                            <li>Global community empowerment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin-top: 4rem;">
+                    <h2 class="section-title">Our SDG Impact</h2>
+                    <div class="features-grid">
+                        <div class="feature-card fade-in-up">
+                            <div class="feature-icon">
+                                <i class="fas fa-utensils"></i>
+                            </div>
+                            <h3>SDG 2: Zero Hunger</h3>
+                            <p>Directly addressing malnutrition through AI-powered nutrition recommendations.</p>
+                        </div>
+                        <div class="feature-card fade-in-up">
+                            <div class="feature-icon">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <h3>SDG 1: No Poverty</h3>
+                            <p>Empowering communities with microcredit platforms and smart budgeting tools.</p>
+                        </div>
+                        <div class="feature-card fade-in-up">
+                            <div class="feature-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <h3>Sustainable Development</h3>
+                            <p>Creating long-term solutions that build community resilience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Contact Page -->
+    <div id="contact" class="page">
+        <section class="about-hero">
+            <div class="container">
+                <h1 class="fade-in-up">Contact Us</h1>
+                <p class="fade-in-up">Get in touch with our team to learn more about NutriMind</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="contact-form fade-in-up">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: #2c5530;">Send us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message">Please enter your full name</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message">Please enter a valid email address</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="organization">Organization (Optional)</label>
+                        <input type="text" id="organization" name="organization">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="partnership">Partnership Opportunities</option>
+                            <option value="implementation">Implementation Support</option>
+                            <option value="feedback">Feedback & Suggestions</option>
+                            <option value="technical">Technical Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="error-message">Please select a subject</div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="6" required placeholder="Tell us about your needs, questions, or how we can help..."></textarea>
+                        <div class="error-message">Please enter your message</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>info@nutrimind.org<br>support@nutrimind.org</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>+233 XXX XXX XXX<br>Available 9 AM - 5 PM GMT</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Accra, Greater Accra<br>Ghana, West Africa</p>
+                </div>
+                <div class="feature-card fade-in-up">
+                    <div class="feature-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p><a href="https://github.com/maryfevlom-collab/NutriMind" target="_blank" style="color: #4caf50; text-decoration: none;">View Repository</a></p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>NutriMind</h3>
+                    <p>AI-Powered solutions for zero hunger and poverty alleviation.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/maryfevlom-collab/NutriMind" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#" data-page="home" style="color: #8bc34a; text-decoration: none;">Home</a></p>
+                    <p><a href="#" data-page="about" style="color: #8bc34a; text-decoration: none;">About</a></p>
+                    <p><a href="#" data-page="contact" style="color: #8bc34a; text-decoration: none;">Contact</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>SDG Goals</h3>
+                    <p>🎯 SDG 1: No Poverty</p>
+                    <p>🍽️ SDG 2: Zero Hunger</p>
+                    <p>🤝 Community Empowerment</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> info@nutrimind.org</p>
+                    <p><i class="fas fa-phone"></i> +233 XXX XXX XXX</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Accra, Ghana</p>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 2rem; border-top: 1px solid #4a7c59; margin-top: 2rem;">
+                <p>&copy; 2024 NutriMind. All rights reserved. Built with ❤️ for SDG 1 & 2.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
